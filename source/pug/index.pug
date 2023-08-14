@@ -1,0 +1,13 @@
+// Все pug файлы лежащие в корне папки pug поумолчанию будут html страницами.
+// Остальные pug файлы которые будут храниться в внутренних папках будут лишь файлами которые можно подключать как друг в друга так и в страницы.
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Document
+		link(rel="stylesheet", href="index.css")
+		//link(rel="stylesheet", href="js/libs.css") Подключать только если были использованы библиотеки
+	body
+		//script(src="js/libs.js") Подключать только если были использованы библиотеки
+		script(type="module", src="js/main.js")
